@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "tryProtocol.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <tryProtocol>
+{
+    __weak IBOutlet UILabel *myLabel;
+}
+
 
 
 @end
